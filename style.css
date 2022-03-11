@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+body,
+.wrapper {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+body {
+    background: black;
+}
+.common {
+    display: flex;
+    font-size: 25px;
+    justify-content: center;
+    /* color: #fff; */
+}
+.common .vl {
+    font-weight: lighter;
+    margin: 0px 5px;
+}
+.calculation {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 25px;
+}
+.inputs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.inpt {
+    height: 50px;
+    width: 200px;
+    padding: 0px 10px;
+    border-radius: 50px;
+    outline: none;
+    border: 1px solid #00000081;
+    margin: 10px;
+    font-size: 20px;
+    font-family: sans-serif;
+    text-align: center;
+    /* box-shadow: 5px 5px 10px #00000070; */
+}
+.inpt:focus {
+    border: 1.5px solid #00a50e9f;
+}
+.btn {
+    margin-top: 15px;
+    width: 100px;
+    height: 33px;
+    border-radius: 33px;
+    outline: none;
+    border: 1px solid #00000070;
+    font-size: 15px;
+    cursor: pointer;
+    background: #ffffff;
+    /* box-shadow: inset -5px -5px 10px #00000070, 5px 5px 10px #00000070; */
+    transform-origin: center;
+    transition: 0.3s ease;
+}
+.btn:hover {
+    transform: scale(1.05);
+}
+.btn:active {
+    transform: scale(0.95);
+}
+.wrapper {
+    width: 95vw;
+    height: 95vh;
+    background: #fff;
+    /* background-color: #212121; */
+    border-radius: 10px;
+    border: 1px solid #00000070;
+    filter: invert(0.85);
+}
+.vl {
+    display: none;
+    width: 2px;
+    height: 30px;
+    background: #000000;
+    z-index: 99;
+    justify-content: center;
+    align-items: center;
+}
+
+/* multiple */
+
+hr {
+    height: 3px;
+    background-color: #000000;
+}
+.given {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.given a {
+    display: block;
+    font-size: 25px;
+    width: 125px;
+    text-align: end;
+}
+
+/* extra */
+
+#divide,
+#multiply,
+label {
+    cursor: pointer;
+    font-size: 20px;
+    margin-top: 15px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+.switch .multiply,
+.switch .divide {
+    display: none;
+}
