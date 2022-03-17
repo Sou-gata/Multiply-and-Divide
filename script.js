@@ -14,6 +14,7 @@ btn.addEventListener("click", () => {
     if (numbers.length == 2) {
         if (divideRadio.checked) {
             let result = devide(numbers[0], numbers[1]);
+            // console.log(result);
             placeInHtml(result);
             divideTab.style.display = "block";
             multiplyTab.style.display = "none";
@@ -80,7 +81,7 @@ function devide(numberA, numberB) {
         let multiple = tempResult * numbers[1];
         multipleRuselts.push(multiple);
         remainderArr.push(remainder);
-        if (counter > numbers[0].length) break;
+        if (numbers[0].length == 1) break;
     }
     result = parseInt(result);
     for (let i = 0; i < remainderArr.length; i++) {
